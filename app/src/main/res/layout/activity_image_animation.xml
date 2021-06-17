@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageExpandAnimationActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dp20"
+        android:gravity="center"
+        android:text="Expand Animation For Image With Specified Height"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/sp20"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/titleTextView"
+        android:id="@+id/imgCardView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp200"
+        app:cardCornerRadius="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp50"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp20"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/android" />
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

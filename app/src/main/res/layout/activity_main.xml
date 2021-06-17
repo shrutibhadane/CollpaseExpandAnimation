@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/dp20"
+    android:layout_marginEnd="@dimen/dp20"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp100"
+        android:text="Welcome to Android Animations"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/sp20"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:layout_marginTop="@dimen/dp100"
+        android:layout_below="@+id/titleTextView">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_btn_bg"
+            android:text="Unspecified Layout Height Animation"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sp16" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn1"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@drawable/rect_btn_bg"
+            android:text="Auto Animation(without click)"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sp16" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn2"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@drawable/rect_btn_bg"
+            android:text="Specified Layout Height Animation"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sp16" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
